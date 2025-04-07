@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About Us - Litlgy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #001f3f;
+            color: #fff;
+        }
+        header {
+            background: #1c1c2e;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            margin-right: auto;
+            margin-left: 50px;
+        }
+        .nav-links a {
+            font-family: 'Playfair Display', serif;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+        .nav-links a:hover {
+            color: #f0a500;
+            text-shadow: 0 0 8px rgba(240, 165, 0, 0.8);
+        }
+        .warning {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 1100;
+        }
+        .warning-message {
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background: #f0a500;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .warning:hover .warning-message {
+            display: block;
+            opacity: 1;
+        }
+        .content {
+            padding: 140px 20px 40px;
+            text-align: center;
+        }
+        .content p {
+            max-width: 700px;
+            margin: 20px auto;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Litlgy</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="client.html">Client Sign Up</a>
+            <a href="lawyer.html">Lawyer Sign Up</a>
+        </nav>
+    </header>
+
+    <div class="warning">⚠️
+        <div class="warning-message">This site is still being made</div>
+    </div>
+
+    <div class="content">
+        <h1>About Us</h1>
+        <p>
+            At Litlgy, we are committed to providing top-tier legal services with professionalism, empathy, and excellence. 
+            Our team of experienced attorneys work diligently to ensure that our clients receive the representation and 
+            support they deserve in every legal matter.
+        </p>
+        <p>
+            Whether you are seeking guidance as a client or joining us as a legal professional, Litlgy strives to create 
+            a space where law meets innovation and trust.
+        </p>
+    </div>
+</body>
+</html>
